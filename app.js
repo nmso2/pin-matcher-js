@@ -55,17 +55,17 @@ document.getElementById("submit-btn").addEventListener('click', function () {
         console.log(actionLeft);
         document.getElementById('action-left').innerText = actionLeft;
         console.log(actionLeft);
-        if (actionLeft==0) {
-            document.getElementById('generate-pin').setAttribute("disabled",true);
+        if (actionLeft == 0) {
+            document.getElementById('generate-pin').setAttribute("disabled", true);
             document.getElementById('generate-pin').style.background = 'gray';
-            document.getElementById("submit-btn").setAttribute("disabled",true);
+            document.getElementById("submit-btn").setAttribute("disabled", true);
             document.getElementById("submit-btn").style.background = 'gray';
             const buttons = document.getElementsByClassName('button');
             for (const button of buttons) {
-                button.setAttribute("disabled",true);
+                button.setAttribute("disabled", true);
                 button.style.background = 'gray';
             }
-            
+
         }
     }
 });
